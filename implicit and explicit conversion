@@ -1,0 +1,14 @@
+package com.package1.project;
+
+public class FirstClass {
+
+	public static void main(String[] args) {
+		
+		int a = 2;  // implicit conversion
+		System.out.println(a);
+		
+		int b = (int)4.3;  // explicit conversion or type casting
+		System.out.println(b);
+	}
+
+}
