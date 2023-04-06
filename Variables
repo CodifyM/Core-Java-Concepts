@@ -1,0 +1,20 @@
+// Variables as name suggest are pron to change!
+// Eg.
+
+
+package com.package1.project;
+
+public class FirstClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//System.out.println("HelloWorld");
+		//System.out.println(5);
+		
+		int a = 2;
+		a = 3;
+		System.out.println(a);
+	}
+
+Output:
+3
