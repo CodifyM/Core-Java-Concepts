@@ -1,0 +1,8 @@
+public class MyClass {
+    public static void main(String[] args) {
+        // get the package name of this class
+        Package pkg = MyClass.class.getPackage();
+        String packageName = pkg.getName();
+        System.out.println("Package name: " + packageName);
+    }
+}
