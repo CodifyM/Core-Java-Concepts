@@ -18,3 +18,31 @@ public class FirstClass {
 
 Output:
 3
+
+
+Another Code for other concept:
+package com.package1.project;
+
+public class FirstClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("HelloWorld");
+		System.out.println(5);
+		
+		int a = 2;
+		a = 3;
+		System.out.println(a);
+		
+		
+		long x = 2000000000000l; //l at the last is required to let compiler understand that the variable x is having a huge (bigger value) then its capacity,
+		                         // so when you use l at the last it(x) will store the value and will not throw the error
+		
+		
+		
+		float y = 332.3f; // f at the last is required to let compiler understand that the variable y is having a huge (bigger value) then its capacity,
+		                  // so when you use f at the last it(y) will store the value and will not throw the error 
+	}
+
+}
+
