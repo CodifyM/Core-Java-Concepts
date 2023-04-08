@@ -1,0 +1,25 @@
+package com.package1.project;
+
+public class RunnerClass{
+	public static void main(String[] args) {
+		specs obj = new specs();
+		System.out.println(obj.c);
+	}
+}
+
+
+
+
+class specs{
+	
+	int a=1;
+	int b=2;
+	int c=a+b;
+	
+}
+
+
+
+
+
+
