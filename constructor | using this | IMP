@@ -1,0 +1,29 @@
+package com.package1.project;
+
+class Calc{
+	int num1;
+	int num2;
+	int result1;
+	
+	
+	public Calc(int num1, int num2) {
+		this.num1 = num1; // this allows compiler to differentiate local and instance parameter
+		this.num2 = num2; 
+		result1 = num1 + num2;
+	}
+	
+	
+}
+
+
+class RunnerClass{
+	public static void main(String[] args) {
+		Calc obj1 = new Calc(1,9); 
+		System.out.println(obj1.result1);
+		//System.out.println(obj1.result); if u run this statement then u will get 0 as garbage value assigned to result.
+	}
+}
+
+
+
+
