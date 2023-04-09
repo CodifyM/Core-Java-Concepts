@@ -1,0 +1,41 @@
+package com.package1.project;
+
+class Emp{
+	int eID;
+	int salary;
+	static String ceo;
+	
+	
+	public void method(){
+		System.out.println(eID + "-" + salary + "-" + ceo);
+	}
+}
+
+
+
+public class StaticDemo {
+
+	public static void main(String[] args) {
+		
+		Emp abhishek = new Emp();
+		abhishek.eID = 1234;
+		abhishek.salary = 400000;
+		abhishek.ceo = "Rashid Khan";
+		//abhishek.ceo = "MS Dhoni";
+		
+		Emp amit = new Emp();
+		amit.eID = 1235;
+		amit.salary = 300000;
+		
+		abhishek.ceo = "MS Dhoni";
+		amit.ceo = "Rashid Khan";
+
+		abhishek.method();
+		amit.method();
+	}
+
+}
+
+
+
+
