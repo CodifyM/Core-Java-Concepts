@@ -1,0 +1,41 @@
+package com.package1.project;
+
+class Emp{
+	int eID;
+	int salary;
+	static String ceo = "Taylor Swift";
+	
+	
+	static {
+		ceo = "Taylor Swift";      // static blocks helps in inititlaizing static stuff
+	}
+	
+	public Emp() {
+		eID = 1223;                // constructors can be used for initilaizing non-static stuff
+		salary = 121212;               
+	}
+	
+	public void method(){
+		System.out.println(eID + "-" + salary + "-" + ceo);
+	}
+}
+
+
+
+public class StaticDemo {
+
+	public static void main(String[] args) {
+		
+		Emp abhishek = new Emp();
+
+		Emp amit = new Emp();
+	
+		abhishek.method();
+		amit.method();
+	}
+
+}
+
+
+
+
