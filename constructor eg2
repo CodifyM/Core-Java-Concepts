@@ -1,0 +1,26 @@
+package com.package1.project;
+
+class Calc{
+	int num1 = 1;
+	int num2 = 2;
+	int result;
+	
+	//constructor
+	public Calc() {
+		result = num1 + num2;
+		System.out.println("Constructor Calc() will be called and it's ingredients will be get in place!");
+	}
+	
+}
+
+
+class RunnerClass{
+	public static void main(String[] args) {
+		Calc obj1 = new Calc(); 
+		System.out.println(obj1.result);
+	}
+}
+
+
+
+
