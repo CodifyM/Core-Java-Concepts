@@ -1,0 +1,28 @@
+package com.package1.project;
+
+class Calc{
+	int num1;
+	int num2;
+	int result1;
+	
+	
+	public Calc(int assignee1, int assignee2) {
+		num1 = assignee1;
+		num2 = assignee2;
+		result1 = num1 + num2;
+	}
+	
+	
+}
+
+
+class RunnerClass{
+	public static void main(String[] args) {
+		Calc obj1 = new Calc(1,9); 
+		System.out.println(obj1.result1);
+	}
+}
+
+
+
+
