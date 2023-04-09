@@ -1,0 +1,21 @@
+package com.package1.project;
+
+class Something{
+	public int function1(int a, int b){
+		return a+b;
+	}
+	
+    public int function1(int a, int b, int c){
+		return a+b+c;
+	}
+	
+}
+
+class RunnerClass{
+	public static void main(String[] args) {
+		Something obj1 = new Something();
+		System.out.println(obj1.function1(1,2)); // will print 3 and if passed with three integers then will print a+b+c
+	}
+}
+
+
