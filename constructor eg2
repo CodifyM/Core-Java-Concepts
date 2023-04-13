@@ -8,7 +8,7 @@ class Calc{
 	//constructor
 	public Calc() {
 		result = num1 + num2;
-		System.out.println("Constructor Calc() will be called and it's ingredients will be get in place!");
+		System.out.println("Constructor Calc() will be called and it's ingredients will get in place!");
 	}
 	
 }
