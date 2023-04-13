@@ -1,0 +1,23 @@
+
+package com.package1.project;
+
+class DoSomething {
+	public int method(int... a) { // Variable Length Arguments
+		for (int i : a) {
+			System.out.println(i);
+		}
+		return 0;
+
+	}
+}
+
+public class ArrayDemo {
+
+	public static void main(String[] args) {
+
+		DoSomething obj1 = new DoSomething();
+		obj1.method(1, 2, 3, 4);
+
+	}
+
+}
