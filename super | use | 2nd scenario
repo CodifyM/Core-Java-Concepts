@@ -1,0 +1,19 @@
+Invoking superclass constructors: When a subclass constructor is called,
+it must call the constructor of its superclass before executing its own code. This is done using the "super" keyword.
+
+class Animal {
+    int age;
+    
+    public Animal(int age) {
+        this.age = age;
+    }
+}
+
+class Cat extends Animal {
+    String name;
+    
+    public Cat(int age, String name) {
+        super(age); // calls the Animal constructor
+        this.name = name;
+    }
+}
