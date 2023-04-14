@@ -1,0 +1,12 @@
+Java doesnot support multiple inheritance because of ambiguity.
+
+
+Lets say there are 2 classes A and B, both have a method named Abhishek().
+
+Also, B extends A.
+
+Now, we made an object in a psvm consisting class and called Abhishek().
+
+Since there are 2 methods with the same name in A and B, there will be ambiguity.
+
+Hence, Java doesnot support multiple inheritance.
