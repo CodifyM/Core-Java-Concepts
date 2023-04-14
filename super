@@ -1,0 +1,17 @@
+In Java, the "super" keyword is used to refer to the superclass of a class. The "super" keyword is typically used in two situations:
+
+1. Accessing superclass methods or variables: When a subclass overrides a method or variable of its superclass, 
+   it can use the "super" keyword to access the overridden method or variable of the superclass.
+   
+   class Animal {
+    public void eat() {
+        System.out.println("Animal is eating");
+    }
+}
+
+class Cat extends Animal {
+    public void eat() {
+        super.eat(); // calls the eat() method of the superclass
+        System.out.println("Cat is eating");
+    }
+}
