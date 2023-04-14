@@ -1,0 +1,16 @@
+package com.package1.project;
+
+class Constructor{
+	Constructor(){
+		System.out.println("only create object, it will call Constructor method");
+	}
+}
+
+
+public class InheritanceDemo {
+
+	public static void main(String[] args) {
+		Constructor obj1 = new Constructor();
+	}
+
+}
