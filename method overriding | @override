@@ -1,0 +1,26 @@
+package com.package1.project;
+
+class ParentClass{
+	void willDo(){
+		System.out.println("ParentClass");
+	}
+}
+
+class ChildClass extends ParentClass{
+	@Override                                           // this is to let you know, u r overriding the willDo of ParentClass, or else will through an error!
+	void willDo(){
+		System.out.println("ChildClass");
+	}
+}
+
+public class InheritanceDemo {
+
+	public static void main(String[] args) {
+		ParentClass p1 = new ParentClass();
+		p1.willDo(); // will print ParentClass
+		
+		ChildClass c1 = new ChildClass();
+		c1.willDo(); // will print ChildClass ---------- ChildClass has overrided the willDo method.
+	}
+
+}
