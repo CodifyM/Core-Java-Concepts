@@ -1,0 +1,26 @@
+package com.package1.project;
+
+
+
+class CalculatorA{
+	public int addition(int a, int b){
+		int sum = a + b;
+		return sum;	
+	}
+}
+
+class CalculatorB extends CalculatorA{
+	
+}
+
+
+public class InheritanceDemo {
+
+	public static void main(String[] args) {
+//		CalculatorA cal1 = new CalculatorA();
+		CalculatorB cal2 = new CalculatorB();
+		int result=cal2.addition(4, 2);
+		System.out.println(result);	
+	}
+
+}
