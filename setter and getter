@@ -1,0 +1,31 @@
+package com.package1.project;
+
+
+class A{
+	
+	private int integer;
+
+	
+	public void setInteger(int i){
+		integer=i;
+	}
+	
+	public int getInteger(){
+		return integer;
+	}
+	
+}
+
+
+public class Encpasulation {
+
+	public static void main(String[] args) {
+		
+		A obj1 = new A();
+		obj1.setInteger(2);
+		
+		System.out.println(obj1.getInteger());
+
+	}
+
+}
