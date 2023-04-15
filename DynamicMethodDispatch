@@ -1,0 +1,31 @@
+package com.package1.project;
+
+
+class Aa{
+	void func1(){
+		System.out.println("in Aa");
+	}
+}
+
+class Bb extends Aa{
+	void func1(){
+		System.out.println("in Bb");
+	}
+	
+}
+
+
+
+public class DynamicMethodDispatch {
+
+	public static void main(String[] args) {
+		
+		Aa obj1 = new Aa(); // here the reference is Aa and object (obj1) is also of Aa
+		obj1.func1();
+		
+		Aa obj2 = new Bb();	// here the reference is Aa and object (obj2) is of Bb hence it will print "in Bb"
+		obj2.func1();       
+
+	}
+
+}
