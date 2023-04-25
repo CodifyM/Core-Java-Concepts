@@ -1,0 +1,3 @@
+Final can be used with: variables, methods, classes.
+
+When done(final); variables(will become constant), methods(overriding will not happen), classes(inheritance will not happen)
