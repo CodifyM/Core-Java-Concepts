@@ -1,0 +1,38 @@
+package com.package1.project;
+
+// we cannot create objects of abstract class
+
+/*also the class which will extend the abstract class will have to have the definition of the 
+method which is present in abstract class */
+
+
+
+abstract class Human{
+	public abstract void eat(); 
+}
+
+class Man extends Human{
+	public void eat(){
+		System.out.println("Eats");
+	}
+}
+
+
+
+public class AbstractDemo {
+	
+	public static void main(String[] args) {
+		// Human obj1 = new Human(); // will through error
+			
+		// hence u need to make an object of Man:
+		Man obj2 = new Man();
+		obj2.eat();
+		
+		/*
+		 * // this will also work: 
+		 * Human obj3 = new Man(); 
+		 * obj3.eat();
+		 */
+	}
+
+}
