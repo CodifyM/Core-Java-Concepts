@@ -1,0 +1,47 @@
+package com.package1.project;
+
+public class WrapperClassDemo {
+
+	public static void main(String[] args) {
+		
+		
+		
+		//PRIMITIVE DATA TYPE
+		int i = 2;
+		
+		
+		
+		//WRAPPING -- converting primitive data type into an object
+		Integer ii = new Integer(i); // putting i as a primitive type into ii which is an object is called WRAPPING
+		System.out.println(ii); 
+		
+		
+		
+		//UNWRAPPING -- converting back the object into primitive data type
+		int j = ii; // putting ii as an object back into i which is a primitive type is called UNWRAPPING
+		System.out.println(j);
+		
+		
+		               //	Integer i = new Integer(8); ----> this way of declaring the variable is discouraged after java 9
+		
+		
+		               /* below code is rather recommended!
+		                * Integer i = Integer.valueOf(8); 
+		                * System.out.println(i);
+		               */
+		
+		
+		//AUTO-WRAPPING -- automatically converting primitive data type into an object (in backend though the java writes this code: Integer ii = new Integer(i);)
+		Integer x = i;
+		System.out.println(x);
+		
+		
+		//AUTO-UNWRAPPING -- automatic conversion from an object to a primitive data type
+		int y = x;
+		System.out.println(y);
+		
+		
+		
+	}
+
+}
