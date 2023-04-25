@@ -1,0 +1,1 @@
+a wrapper class is a class that provides a way to use primitive data types (such as int, boolean, float, etc.) as objects. It wraps the primitive data type into an object, allowing it to be used in situations where an object is required.
