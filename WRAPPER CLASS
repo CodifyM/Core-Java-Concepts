@@ -18,7 +18,7 @@ public class WrapperClassDemo {
 		
 		
 		//UNWRAPPING -- converting back the object into primitive data type
-		int j = ii; // putting ii as an object back into i which is a primitive type is called UNWRAPPING
+		int j = ii; // putting ii as an object back into j which is a primitive type is called UNWRAPPING
 		System.out.println(j);
 		
 		
