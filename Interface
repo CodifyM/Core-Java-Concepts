@@ -1,0 +1,35 @@
+# interface are similar to abstract classes, the only differene is all the methods within an 
+interface will become abstract. 
+And, as u know the abstract classes cannot be instantiated hence interface cannot be 
+instantitated either.
+
+# It is mandatory to have the defintion of interface's method which implements it. Eg below:
+
+# To call function of interface do following:
+
+package com.package1.project;
+
+
+interface Lify{
+	void methodify();
+}
+
+class Tify implements Lify{
+
+	@Override
+	public void methodify() {
+		System.out.println("Odibaba!");
+	}
+	
+}
+
+public class InterfaceDemo {
+
+	public static void main(String[] args) {
+		Lify obj = new Tify(); // you cannot create an object of a Lify as Lify is declared as an interface, hence instead
+                           // we'd given the reference of Lify and made an object of Tify and then called Tify by makeing 
+                           // Tify's object.
+		obj.methodify();
+	}
+
+}
